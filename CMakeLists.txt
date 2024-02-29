@@ -7,4 +7,6 @@ add_executable(book_lib_manag main.cpp
         Book.cpp
         Book.h
         Library.cpp
-        Library.h)
+        Library.h
+        Reader.cpp
+        Reader.h)
