@@ -16,7 +16,14 @@ public:
     Book(string new_name);
     Book(string new_name, string new_author);
     Book(string new_name, string new_author, int new_yOfW);
-    ~Book();
+    ~Book() {
+        cout << "Destructor calls" << endl;
+    };
+    void displayInfo() {
+        cout << "Name: " << name << endl
+        << "Author: " << author << endl
+        << "Years of writing: " << yearsOfWriting << endl;
+    }
 };
 
 #endif
