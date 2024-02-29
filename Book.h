@@ -13,16 +13,19 @@ private:
     int yearsOfWriting;
 public:
     Book();
+
     Book(string new_name);
+
     Book(string new_name, string new_author);
+
     Book(string new_name, string new_author, int new_yOfW);
-    ~Book() {
-        cout << "Destructor calls" << endl;
-    };
+
+    ~Book() {};
+
     void displayInfo() {
         cout << "Name: " << name << endl
-        << "Author: " << author << endl
-        << "Years of writing: " << yearsOfWriting << endl;
+             << "Author: " << author << endl
+             << "Years of writing: " << yearsOfWriting << endl;
     }
 };
 
