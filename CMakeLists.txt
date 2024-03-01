@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(book_lib_manag main.cpp
         Book.cpp
         Book.h
-        Library.cpp
-        Library.h
+        Freelib.cpp
+        Freelib.h
         Reader.cpp
         Reader.h)
