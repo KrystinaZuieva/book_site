@@ -1,23 +1,23 @@
-#ifndef BOOK_LIB_MANAG_LIBRARY_H
-#define BOOK_LIB_MANAG_LIBRARY_H
+#ifndef BOOK_LIB_MANAG_FREELIB_H
+#define BOOK_LIB_MANAG_FREELIB_H
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Library {
+class Freelib {
 private:
     string address;
     string name;
 public:
-    Library();
+    Freelib();
 
-    Library(string new_add);
+    Freelib(string new_add);
 
-    Library(string new_add, string new_name);
+    Freelib(string new_add, string new_name);
 
-    ~Library() {};
+    ~Freelib() {};
 
     void displayIn() {
         cout << "Address: " << address << endl
