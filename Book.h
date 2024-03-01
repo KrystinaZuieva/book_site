@@ -11,6 +11,7 @@ private:
     string name;
     string author;
     int yearsOfWriting;
+    string genre;
 public:
     Book();
 
@@ -20,12 +21,15 @@ public:
 
     Book(string new_name, string new_author, int new_yOfW);
 
+    Book(string new_name, string new_author, int new_yOfW, string new_gen);
+
     ~Book() {};
 
     void displayInfo() {
         cout << "Name: " << name << endl
              << "Author: " << author << endl
-             << "Years of writing: " << yearsOfWriting << endl;
+             << "Years of writing: " << yearsOfWriting << endl
+             << "Genre: " << genre << endl;
     }
 };
 
