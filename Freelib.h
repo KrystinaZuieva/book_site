@@ -8,20 +8,24 @@ using namespace std;
 
 class Freelib {
 private:
-    string address;
-    string name;
+    string text;
 public:
     Freelib();
 
-    Freelib(string new_add);
-
-    Freelib(string new_add, string new_name);
+    Freelib(string new_text);
 
     ~Freelib() {};
 
-    void displayIn() {
-        cout << "Address: " << address << endl
-             << "Name: " << name << endl;
+    void addText(const string &appendText) {
+        text += appendText;
+    }
+
+    void clearText() {
+        text = "";
+    }
+
+    void readingText() {
+        cout << "Reading text: " << text << endl;
     }
 };
 
