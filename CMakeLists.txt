@@ -8,5 +8,5 @@ add_executable(book_lib_manag main.cpp
         Book.h
         Freelib.cpp
         Freelib.h
-        Reader.cpp
-        Reader.h)
+        User.cpp
+        User.h)
